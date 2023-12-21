@@ -1,0 +1,39 @@
+.guide-item-container {
+  width: 270px;
+  font-family: "Roboto";
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.city-img {
+  width: 100%;
+  border-radius: 8px;
+  height: 180px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  color: #322f2b;
+}
+
+.description {
+  color: #807782;
+}
+
+.no-of-views-likes-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.no-of-likes-container {
+  display: flex;
+  align-items: center;
+}
+
+.no-count {
+  color: #323136;
+  margin-left: 10px;
+  line-height: 0px;
+}

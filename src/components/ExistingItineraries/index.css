@@ -1,0 +1,28 @@
+.search-input-main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-guides-list-container {
+  list-style-type: none;
+  padding-left: 0px;
+}
+
+.guides-heading {
+  margin-left: 10%;
+  font-size: 22px;
+  margin-top: 100px;
+}
+
+.itineraries-results-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-guides-list-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
