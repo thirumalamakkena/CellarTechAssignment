@@ -4,7 +4,6 @@ import Header from "../Header";
 import CityItem from "../CityItem";
 
 import { citiesData } from "../CitiesData";
-import { IoIosSearch } from "react-icons/io";
 
 const citiesSearchData = citiesData;
 

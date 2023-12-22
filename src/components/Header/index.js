@@ -47,7 +47,7 @@ const Header = (props) => {
               </Link>
             </li>
             <li className="nav-menu-item">
-              <Link to="/itineraries" className="nav-link">
+              <Link to="/review" className="nav-link">
                 Reviews
               </Link>
             </li>

@@ -10,7 +10,7 @@ const GuideItem = (props) => {
 
   return (
     <li className="guide-item-container">
-      <img src={imageUrl} className="city-img" />
+      <img alt={title} src={imageUrl} className="city-img" />
       <p className="title">{title}</p>
       <p className="description">
         These are the most beautiful cities in this itineraries.we can visit

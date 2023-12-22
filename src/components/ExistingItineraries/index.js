@@ -4,7 +4,6 @@ import Header from "../Header";
 import GuideItem from "../GuideItem";
 
 import { itinerariesData } from "../ItinerariesData";
-import { IoIosSearch } from "react-icons/io";
 
 const itinerariesSearchData = itinerariesData;
 
