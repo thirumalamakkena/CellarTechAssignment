@@ -17,6 +17,8 @@ class Home extends Component {
       startDate: null,
       endDate: null,
       searchInput: "",
+      errMsg: "",
+      showErrMsg: false,
       filteredData: [],
     };
   }
@@ -36,7 +38,11 @@ class Home extends Component {
       city.name.toLowerCase().includes(val)
     );
 
-    this.setState({ searchInput: event.target.value, filteredData: filtered });
+    this.setState({
+      searchInput: event.target.value,
+      filteredData: filtered,
+      showErrMsg: false,
+    });
   };
 
   handleSelect = (value) => {
@@ -46,11 +52,26 @@ class Home extends Component {
 
   onCreatePlan = () => {
     const { history } = this.props;
-    history.replace("/my-plan");
+    const { searchInput, startDate, endDate } = this.state;
+    if (searchInput !== "" && startDate !== "" && endDate !== "") {
+      this.setState({ showErrMsg: false });
+      history.replace("/my-plan");
+    } else {
+      this.setState({
+        showErrMsg: true,
+        errMsg: "",
+      });
+    }
   };
 
   render() {
-    const { startDate, endDate, searchInput, filteredData } = this.state;
+    const {
+      startDate,
+      endDate,
+      searchInput,
+      filteredData,
+      showErrMsg,
+    } = this.state;
 
     return (
       <>
@@ -109,6 +130,9 @@ class Home extends Component {
                 </div>
               </div>
             </div>
+            {showErrMsg && (
+              <p className="err-msg">**Enter destination and planning dates</p>
+            )}
             <button className="planning-btn" onClick={this.onCreatePlan}>
               Start Planning
             </button>

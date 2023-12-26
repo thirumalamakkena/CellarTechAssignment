@@ -117,3 +117,7 @@
 .search-results li:hover {
   background-color: #f4f4f4;
 }
+
+.err-msg {
+  color: red;
+}

@@ -82,6 +82,11 @@ const Header = (props) => {
               Itineraries
             </Link>
           </li>
+          <li className="nav-menu-item-mobile">
+            <Link to="/review" className="nav-link">
+              Reviews
+            </Link>
+          </li>
         </ul>
       </div>
     </nav>

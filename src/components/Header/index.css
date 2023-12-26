@@ -14,7 +14,7 @@
 
 .logo-name {
   font-size: 22px;
-  color: #f75940;
+  color: #1bcfc9;
   font-weight: 600;
   margin-left: 10px;
 }
@@ -115,7 +115,8 @@
   font-family: "Roboto";
   text-decoration: none;
   margin: 10px;
-  font-weight: 400;
+  color: #000000;
+
   font-size: 16px;
 }
 
